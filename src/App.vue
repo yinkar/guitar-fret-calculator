@@ -78,6 +78,7 @@ onMounted(() => {
 .label {
   transform: translate(-82px, 2px) rotate(-70deg);
   transform-origin: top right;
+  white-space: nowrap;
 }
 
 .guitar-fretboard {
