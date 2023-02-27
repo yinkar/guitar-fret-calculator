@@ -1,9 +1,11 @@
 <script setup>
 import { onMounted, ref } from 'vue';
+import Result from './components/Result.vue';
 
 const frets = ref([]);
 const scaleLength = ref(65);
 const numberOfFrets = ref(24);
+const precision = ref(2);
 
 function calcFret(stringLenght, fretAmount) {
     const fretLengths = [];
@@ -35,27 +37,17 @@ onMounted(() => {
 </script>
 
 <template>
+
   <div class="app-container">
     <div class="panel">
       <input type="number" min="1" max="200" @input="fretCountEvent" v-model="scaleLength">
       <input type="number" min="1" max="40" @input="fretCountEvent" v-model="numberOfFrets">
+      <input type="number" min="1" max="6" @input="fretCountEvent" v-model="precision">
     </div>
 
-    <div class="guitar-fretboard" :style="{ width: `${scaleLength * 10}px` }">
-      <div class="fret" v-for="fret in frets" :style="{ left: `${fret.position * 10}px` }"></div>
-    </div>
-
-    <div class="labels">
-      <div class="label-container" v-for="(fret, index) in frets" :style="{ left: `${fret.position * 10 - fret.length * 10 / 2}px` }">
-        <div v-for="line in Array(index + 1)" class="line"></div>
-        <div class="label">
-          <strong>Fret {{ index + 1 }}:</strong>
-          
-          {{ fret.length.toFixed(2) }} cm
-        </div>
-      </div>
-    </div>
+    <Result :frets="frets" :scale-length="scaleLength" :precision="precision" />
   </div>
+
 </template>
 
 <style scoped>
@@ -63,40 +55,20 @@ onMounted(() => {
   margin: 80px auto;
 }
 
-.labels {
+.panel {
   display: flex;
-  font-size: .6rem;
-  position: relative;
+  width: 600px;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
-.label-container {
-  position: absolute;
-}
-
-.label {
-  transform-origin: center right;
-  transform: translate(-68px, -3px) rotate(-70deg);
-  white-space: nowrap;
-}
-
-.line {
-  height: 1rem;
-  width: 1px;
-  background-color: #fff;
-}
-
-.guitar-fretboard {
-  height: 80px;
-  position: relative;
-  background-color: sienna;
-}
-
-.guitar-fretboard .fret {
-  position: absolute;
-  top: 0;
-  width: 4px;
-  height: 100%;
-  background-color: lightyellow;
+.panel input {
+  padding: 5px 10px;
+  font-size: 2rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
   border-radius: 5px;
+  outline: none;
 }
 </style>
