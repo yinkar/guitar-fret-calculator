@@ -5,16 +5,13 @@
   
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
+  width: 100vw;
+  overflow: auto;
 }
 
 html, body {
   margin: 0;
   padding: 0,
-}
-
-body {
-  display: flex;
-  justify-content: center;
 }
 
 @font-face {

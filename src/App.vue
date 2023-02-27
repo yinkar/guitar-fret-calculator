@@ -40,9 +40,20 @@ onMounted(() => {
 
   <div class="app-container">
     <div class="panel">
-      <input type="number" min="1" max="200" @input="fretCountEvent" v-model="scaleLength">
-      <input type="number" min="1" max="40" @input="fretCountEvent" v-model="numberOfFrets">
-      <input type="number" min="1" max="6" @input="fretCountEvent" v-model="precision">
+      <div>
+        <label for="scale-length">Scale Lenght</label>
+        <input name="scale-length" type="number" min="1" max="200" @input="fretCountEvent" v-model="scaleLength">
+      </div>
+
+      <div>
+        <label for="number-of-frets">Number of Frets</label>
+        <input name="number-of-frets" type="number" min="1" max="40" @input="fretCountEvent" v-model="numberOfFrets">
+      </div>
+      
+      <div>
+        <label for="precision">Precision</label>
+        <input name="precision" type="number" min="1" max="6" @input="fretCountEvent" v-model="precision">
+      </div>
     </div>
 
     <Result :frets="frets" :scale-length="scaleLength" :precision="precision" />
@@ -52,14 +63,26 @@ onMounted(() => {
 
 <style scoped>
 .app-container {
-  margin: 80px auto;
+  margin: 30px auto;
 }
 
 .panel {
-  display: flex;
-  width: 600px;
-  justify-content: space-between;
+  width: 100vw;
+  justify-content: center;
   margin: 0 auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel label {
+  white-space: nowrap;
+  display: block;
+}
+
+.panel > div {
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .panel input {

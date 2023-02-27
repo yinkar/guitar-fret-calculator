@@ -18,6 +18,10 @@ defineProps({
 
 <style scoped>
   .result {
-    margin: 50px auto;
+    padding: 50px 70px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-width: 100vw;
+    height: 1000px;
   }
 </style>
