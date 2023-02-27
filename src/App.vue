@@ -37,7 +37,7 @@ onMounted(() => {
 <template>
   <div class="app-container">
     <div class="panel">
-      <input type="number" min="1" max="999" @input="fretCountEvent" v-model="scaleLength">
+      <input type="number" min="1" max="200" @input="fretCountEvent" v-model="scaleLength">
       <input type="number" min="1" max="40" @input="fretCountEvent" v-model="numberOfFrets">
     </div>
 
@@ -47,9 +47,7 @@ onMounted(() => {
 
     <div class="labels">
       <div class="label-container" v-for="(fret, index) in frets" :style="{ left: `${fret.position * 10 - fret.length * 10 / 2}px` }">
-        <div v-for="line in Array(index + 1)">
-          |
-        </div>
+        <div v-for="line in Array(index + 1)" class="line"></div>
         <div class="label">
           <strong>Fret {{ index + 1 }}:</strong>
           
@@ -62,7 +60,7 @@ onMounted(() => {
 
 <style scoped>
 .app-container {
-  margin: 100px;
+  margin: 80px auto;
 }
 
 .labels {
@@ -76,9 +74,15 @@ onMounted(() => {
 }
 
 .label {
-  transform: translate(-82px, 2px) rotate(-70deg);
-  transform-origin: top right;
+  transform-origin: center right;
+  transform: translate(-68px, -3px) rotate(-70deg);
   white-space: nowrap;
+}
+
+.line {
+  height: 1rem;
+  width: 1px;
+  background-color: #fff;
 }
 
 .guitar-fretboard {
