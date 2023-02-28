@@ -7,11 +7,22 @@ const scaleLength = ref(65);
 const numberOfFrets = ref(24);
 const precision = ref(2);
 
+const fretLengthRate = 17.817;
+const inchesRate = 2.54;
+
+const Units = {
+  Centimeters: 0,
+  Inches: 1,
+};
+
+const unit = ref(Units.Centimeters);
+
 function calcFret(stringLenght, fretAmount) {
     const fretLengths = [];
+
     let remainStringLength = stringLenght;
     for (let i = 0; i < fretAmount; i++) {
-        const fretLength = remainStringLength / 17.817;
+        const fretLength = remainStringLength / fretLengthRate;
         fretLengths.push(fretLength);
         remainStringLength -= fretLength;
     }
@@ -19,7 +30,7 @@ function calcFret(stringLenght, fretAmount) {
 }
 
 function fretCountEvent() {
-  const fretLengths = calcFret(scaleLength.value, numberOfFrets.value);
+  const fretLengths = calcFret(scaleLength.value * (unit.value === Units.Inches ? inchesRate : 1), numberOfFrets.value);
 
   frets.value.splice(0, frets.value.length);
 
@@ -29,6 +40,17 @@ function fretCountEvent() {
       position: fretLengths.slice(0, i + 1).reduce((acc, a) => acc + a),
     }
   }));
+}
+
+function unitChange() {
+  if (unit.value === Units.Inches) {
+    scaleLength.value = parseFloat((scaleLength.value / inchesRate).toFixed(2));
+  }
+  else {
+    scaleLength.value = Math.ceil(scaleLength.value * inchesRate);
+  }
+  
+  fretCountEvent();
 }
 
 onMounted(() => {
@@ -54,9 +76,18 @@ onMounted(() => {
         <label for="precision">Precision</label>
         <input name="precision" type="number" min="1" max="6" @input="fretCountEvent" v-model="precision">
       </div>
+
+      <div class="unit-selector">
+        <input type="radio" id="unit_cm" :value="Units.Centimeters" v-model="unit" @change="unitChange">
+        <label for="unit_cm">Centimeters</label>
+
+        <input type="radio" id="unit_inches" :value="Units.Inches" v-model="unit" @change="unitChange">
+        <label for="unit_inches">Inches</label>
+      </div>
+      
     </div>
 
-    <Result :frets="frets" :scale-length="scaleLength" :precision="precision" />
+    <Result :frets="frets" :scale-length="scaleLength" :precision="precision" :is-in-inches="unit === Units.Inches" :inches-rate="inchesRate" />
 
     <div class="icons">
       <a href="https://github.com/yinkar/guitar-fret-calculator" title="Github Repo">
@@ -99,8 +130,36 @@ onMounted(() => {
   border: none;
   border-radius: 5px;
   outline: none;
-  width: 100px;
+  width: 120px;
+  text-align: center;
 }
+
+.panel .unit-selector input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.panel .unit-selector {
+  border-radius: 5px;
+  background-color: #333;
+  overflow: hidden;
+}
+
+.panel .unit-selector label {
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.panel .unit-selector input[type="radio"]:checked + label {
+  background-color: #555;
+}
+
+.panel .unit-selector label:hover {
+  background-color: #444;
+}
+
 .icons {
   position: absolute;
   width: 200px;

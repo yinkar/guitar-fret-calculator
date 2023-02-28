@@ -5,17 +5,19 @@ defineProps({
   frets: Array,
   precision: Number,
   scaleLength: Number,
+  isInInches: Boolean,
+  inchesRate: Number,
 });
 </script>
 
 <template>
-  <div class="labels" :style="{ width: `${scaleLength * 10}px` }">
+  <div class="labels" :style="{ width: `${(isInInches ? (scaleLength * inchesRate) : scaleLength) * 10}px` }">
     <div class="label-container" v-for="(fret, index) in frets" :style="{ left: `${fret.position * 10 - fret.length * 10 / 2}px` }">
       <div v-for="line in Array(index + 1)" class="line"></div>
       <div class="label">
         <strong>Fret {{ index + 1 }}:</strong>
         
-        {{ fret.length.toFixed(precision) }} cm
+        {{ (fret.length / (isInInches ? inchesRate : 1)).toFixed(precision) }} {{ isInInches ? '″' : 'cm'}}
       </div>
     </div>
   </div>

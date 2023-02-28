@@ -6,13 +6,15 @@ defineProps({
   frets: Array,
   scaleLength: Number,
   precision: Number,
+  isInInches: Boolean,
+  inchesRate: Number,
 });
 </script>
 
 <template>
   <div class="result">
-    <GuitarFretboard :frets="frets" :scale-length="scaleLength" />
-    <Labels :frets="frets" :precision="precision" :scale-length="scaleLength" />
+    <GuitarFretboard :frets="frets" :scale-length="(isInInches ? (scaleLength * inchesRate) : scaleLength)" />
+    <Labels :frets="frets" :precision="precision" :scale-length="scaleLength" :is-in-inches="isInInches" :inches-rate="inchesRate" />
   </div>
 </template>
 
@@ -25,7 +27,7 @@ defineProps({
     height: 800px;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 770px) {
     .result {
       padding: 50px 60px;
     }    
