@@ -62,27 +62,32 @@ onMounted(() => {
 
   <div class="app-container">
     <div class="panel">
-      <div>
-        <label for="scale-length">Scale Lenght</label>
-        <input name="scale-length" type="number" min="1" max="200" @input="fretCountEvent" v-model="scaleLength">
+
+      <div class="panel-row">
+        <div>
+          <label for="scale-length">Scale Lenght</label>
+          <input name="scale-length" type="number" min="1" max="200" @input="fretCountEvent" v-model="scaleLength">
+        </div>
+
+        <div class="unit-selector">
+          <input type="radio" id="unit_cm" :value="Units.Centimeters" v-model="unit" @change="unitChange">
+          <label for="unit_cm">cm</label>
+
+          <input type="radio" id="unit_inches" :value="Units.Inches" v-model="unit" @change="unitChange">
+          <label for="unit_inches">Inches</label>
+        </div>
       </div>
 
-      <div>
-        <label for="number-of-frets">Number of Frets</label>
-        <input name="number-of-frets" type="number" min="1" max="40" @input="fretCountEvent" v-model="numberOfFrets">
-      </div>
-      
-      <div>
-        <label for="precision">Precision</label>
-        <input name="precision" type="number" min="1" max="6" @input="fretCountEvent" v-model="precision">
-      </div>
-
-      <div class="unit-selector">
-        <input type="radio" id="unit_cm" :value="Units.Centimeters" v-model="unit" @change="unitChange">
-        <label for="unit_cm">Centimeters</label>
-
-        <input type="radio" id="unit_inches" :value="Units.Inches" v-model="unit" @change="unitChange">
-        <label for="unit_inches">Inches</label>
+      <div class="panel-row">
+        <div>
+          <label for="number-of-frets">Number of Frets</label>
+          <input name="number-of-frets" type="number" min="1" max="40" @input="fretCountEvent" v-model="numberOfFrets">
+        </div>
+        
+        <div>
+          <label for="precision">Precision</label>
+          <input name="precision" type="number" min="1" max="6" @input="fretCountEvent" v-model="precision">
+        </div>
       </div>
       
     </div>
@@ -112,6 +117,40 @@ onMounted(() => {
   flex-direction: column;
 }
 
+.panel-row {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.panel .unit-selector input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.panel .unit-selector {
+  border-radius: 5px;
+  background-color: #333;
+  overflow: hidden;
+}
+
+.panel .unit-selector label {
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: .8rem
+}
+
+.panel .unit-selector input[type="radio"]:checked + label {
+  background-color: #555;
+}
+
+.panel .unit-selector label:hover {
+  background-color: #444;
+}
+
 .panel label {
   white-space: nowrap;
   display: block;
@@ -132,32 +171,6 @@ onMounted(() => {
   outline: none;
   width: 120px;
   text-align: center;
-}
-
-.panel .unit-selector input[type="radio"] {
-  opacity: 0;
-  position: fixed;
-  width: 0;
-}
-
-.panel .unit-selector {
-  border-radius: 5px;
-  background-color: #333;
-  overflow: hidden;
-}
-
-.panel .unit-selector label {
-  display: inline-block;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-.panel .unit-selector input[type="radio"]:checked + label {
-  background-color: #555;
-}
-
-.panel .unit-selector label:hover {
-  background-color: #444;
 }
 
 .icons {
