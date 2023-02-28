@@ -4,11 +4,12 @@ import { defineProps } from 'vue';
 defineProps({
   frets: Array,
   precision: Number,
+  scaleLength: Number,
 });
 </script>
 
 <template>
-  <div class="labels">
+  <div class="labels" :style="{ width: `${scaleLength * 10}px` }">
     <div class="label-container" v-for="(fret, index) in frets" :style="{ left: `${fret.position * 10 - fret.length * 10 / 2}px` }">
       <div v-for="line in Array(index + 1)" class="line"></div>
       <div class="label">
@@ -25,6 +26,7 @@ defineProps({
   display: flex;
   font-size: .6rem;
   position: relative;
+  margin: 0 auto;
 }
 
 .label-container {
