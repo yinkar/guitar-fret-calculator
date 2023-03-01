@@ -9,6 +9,13 @@ defineProps({
 
 <template>
   <div class="guitar-fretboard" :style="{ width: `${scaleLength * 10}px` }">
+    <div 
+      class="dot" 
+      v-for="(fret, index) in frets" 
+      v-show="[3, 5, 7, 9, 12].includes(index + 1) && fret.length * 8 > 10" 
+      :style="{ left: `${fret.position * 10 - fret.length * 10 / 2 - 4}px` }" 
+      :class="{ double: index + 1 === 12 }"
+    ></div>
     <div class="fret" v-for="fret in frets" :style="{ left: `${fret.position * 10 - 2}px` }"></div>
   </div>
 </template>
@@ -34,5 +41,30 @@ defineProps({
   border-radius: 5px;
   background: radial-gradient(#fff, #666);
   box-shadow: inset 0 0 3px rgb(0 0 0 / 50%), 5px 0 5px rgb(0 0 0 / 30%);
+}
+
+.guitar-fretboard .dot {
+  position: absolute;
+  top: calc(100% / 2 - 5px);
+  width: 8px;
+  height: 8px;
+  left: 0;
+  border-radius: 50%;
+  background: radial-gradient(#fff, #ddd);
+}
+
+.guitar-fretboard .dot.double {
+  top: calc(100% / 2 + 8px);
+}
+
+.guitar-fretboard .dot.double::before {
+  position: absolute;
+  top: calc(100% / 2 - 28px);
+  width: 8px;
+  height: 8px;
+  left: 0;
+  border-radius: 50%;
+  background: radial-gradient(#fff, #ddd);
+  content: '';
 }
 </style>
