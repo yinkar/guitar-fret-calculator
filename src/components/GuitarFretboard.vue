@@ -291,7 +291,7 @@ defineProps({
     ></div>
     <div class="fret" v-for="fret in frets" :style="{ left: `${fret.position * 10 - 2}px` }"></div>
 
-    <div class="strings" :style="{ width: `${scaleLength * 10 + 69}px` }">
+    <div class="strings" :style="{ width: `${scaleLength * 10 + 84}px` }">
       <div class="string string-6" style="top: 6px; height: 2px;"></div>
       <div class="string string-5" style="top: 18px; height: 1.8px;"></div>
       <div class="string string-4" style="top: 30px; height: 1.6px;"></div>
