@@ -19,7 +19,7 @@ defineProps({
         d="M29.6752 124.445V128.942L23.6752 130.169C22.5085 130.577 20.3752 132.213 21.1752 135.483C22.1752 139.572 25.6752 144.887 34.6752 144.478V144.456C43.6752 144.864 47.1752 139.55 48.1752 135.461C48.9752 132.191 46.8418 130.555 45.6752 130.146L39.6752 128.92V124.423L36.5 113.838H34.6752L29.6752 124.445Z"
         fill="url(#paint2_radial_5_60)" stroke="url(#paint3_linear_5_60)" />
       <path
-        d="M80.6752 22.6903V18.1932L74.6752 16.9667C73.5085 16.5578 71.3752 14.9225 72.1752 11.6519C73.1752 7.56354 76.6752 2.24873 85.6752 2.65756V2.67979C94.6752 2.27095 98.1752 7.58577 99.1752 11.6741C99.9752 14.9447 97.8418 16.5801 96.6752 16.9889L90.6752 18.2154V22.7126L87.5 33.2977H85.6752L80.6752 22.6903Z"
+        d="M80.6752 22.6903V18.1932L74.6752 16.9667C73.5085 16.5578 71.3752 14.9225 72.1752 11.6519C73.1752 7.56354 76.6752 2.24873 85.6752 2.65756V2.67979C94.6752 2.27095 98.1752 7.58577 99.1752 11.6741C99.9752 14.9447 97.8418 16.5801 96.6752 16.9889L90.6752 18.2154V22.7125L87.5 33.2977H85.6752L80.6752 22.6903Z"
         fill="url(#paint4_radial_5_60)" stroke="url(#paint5_linear_5_60)" />
       <path
         d="M79.6752 122.81V127.307L73.6752 128.533C72.5085 128.942 70.3752 130.577 71.1752 133.848C72.1752 137.936 75.6752 143.251 84.6752 142.842V142.82C93.6752 143.229 97.1752 137.914 98.1752 133.826C98.9752 130.555 96.8418 128.92 95.6752 128.511L89.6752 127.285V122.787L86.5 112.202H84.6752L79.6752 122.81Z"
@@ -38,8 +38,8 @@ defineProps({
           d="M0 27.0432C0 23.0859 3.27784 19.9154 7.23295 20.0471L168.462 25.4156C168.814 25.4273 169.164 25.4655 169.509 25.5297L201.279 31.4365C204.595 32.0529 207 34.946 207 38.3185V105.415C207 108.682 204.74 111.515 201.555 112.241L173.241 118.691C172.805 118.79 172.361 118.848 171.914 118.862L7.22811 124.232C3.27482 124.36 0 121.191 0 117.235V27.0432Z"
           fill="url(#paint13_radial_5_60)" />
       </g>
-      <rect x="190" y="34" width="11" height="77" rx="3" fill="#1D1D1D" />
-      <rect x="194" y="37" width="3" height="71" rx="1.5" fill="url(#paint14_radial_5_60)" />
+      <rect x="190" y="32" width="11" height="80" rx="3" fill="#1D1D1D" />
+      <rect x="194" y="34" width="3" height="76" rx="1.5" fill="url(#paint14_radial_5_60)" />
       <mask id="mask0_5_60" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="20" width="202"
         height="105">
         <path
@@ -47,49 +47,73 @@ defineProps({
           fill="url(#paint15_radial_5_60)" />
       </mask>
       <g mask="url(#mask0_5_60)">
-        <path d="M201.5 64.5L85 47.5L36 33" stroke="#BCBCBC" stroke-width="1.4" />
-        <path d="M201.5 78L85.5 105.5L37 112" stroke="#AEAEAE" stroke-width="1.4" />
-        <path d="M201.5 90.5L138 105L88 108.5" stroke="#AEAEAE" stroke-width="1.2" />
-        <path d="M202 41L136.5 38.5" stroke="#BCBCBC" stroke-width="2" />
-        <path d="M202 53L134.5 41L84 38.5" stroke="#BCBCBC" stroke-width="1.8" />
-        <path d="M201.5 102.5L138 107" stroke="#AEAEAE" stroke-width="1.1" />
+        <g filter="url(#filter1_d_5_60)">
+          <path d="M201.5 65L85 47.5L36 33" stroke="#BCBCBC" stroke-width="1.4" />
+        </g>
+        <g filter="url(#filter2_d_5_60)">
+          <path d="M201.5 76.5L85.5 105.5L37 112" stroke="#AEAEAE" stroke-width="1.4" />
+        </g>
+        <g filter="url(#filter3_d_5_60)">
+          <path d="M201.5 90.5L138 105L88 108.5" stroke="#AEAEAE" stroke-width="1.2" />
+        </g>
+        <g filter="url(#filter4_d_5_60)">
+          <path d="M202 40L136.5 38.5" stroke="#BCBCBC" stroke-width="2" />
+        </g>
+        <g filter="url(#filter5_d_5_60)">
+          <path d="M202 52L134.5 41L84 38.5" stroke="#BCBCBC" stroke-width="1.8" />
+        </g>
+        <g filter="url(#filter6_d_5_60)">
+          <path d="M201.5 102.5L138 107" stroke="#AEAEAE" stroke-width="1.1" />
+        </g>
       </g>
-      <circle cx="35" cy="42" r="10" fill="url(#paint16_radial_5_60)" />
-      <circle cx="35" cy="42" r="10" fill="url(#paint17_radial_5_60)" />
-      <circle cx="35" cy="42" r="10" fill="url(#paint18_radial_5_60)" />
-      <circle cx="35" cy="42" r="5" fill="url(#paint19_radial_5_60)" />
-      <circle cx="35" cy="42" r="5" fill="url(#paint20_radial_5_60)" />
-      <circle cx="35" cy="42" r="5" fill="url(#paint21_radial_5_60)" />
-      <circle cx="86" cy="44" r="10" fill="url(#paint22_radial_5_60)" />
-      <circle cx="86" cy="44" r="10" fill="url(#paint23_radial_5_60)" />
-      <circle cx="86" cy="44" r="10" fill="url(#paint24_radial_5_60)" />
-      <circle cx="86" cy="44" r="5" fill="url(#paint25_radial_5_60)" />
-      <circle cx="86" cy="44" r="5" fill="url(#paint26_radial_5_60)" />
-      <circle cx="86" cy="44" r="5" fill="url(#paint27_radial_5_60)" />
-      <circle cx="137" cy="47" r="10" fill="url(#paint28_radial_5_60)" />
-      <circle cx="137" cy="47" r="10" fill="url(#paint29_radial_5_60)" />
-      <circle cx="137" cy="47" r="10" fill="url(#paint30_radial_5_60)" />
-      <circle cx="137" cy="47" r="5" fill="url(#paint31_radial_5_60)" />
-      <circle cx="137" cy="47" r="5" fill="url(#paint32_radial_5_60)" />
-      <circle cx="137" cy="47" r="5" fill="url(#paint33_radial_5_60)" />
-      <circle cx="35" cy="103" r="10" fill="url(#paint34_radial_5_60)" />
-      <circle cx="35" cy="103" r="10" fill="url(#paint35_radial_5_60)" />
-      <circle cx="35" cy="103" r="10" fill="url(#paint36_radial_5_60)" />
-      <circle cx="35" cy="103" r="5" fill="url(#paint37_radial_5_60)" />
-      <circle cx="35" cy="103" r="5" fill="url(#paint38_radial_5_60)" />
-      <circle cx="35" cy="103" r="5" fill="url(#paint39_radial_5_60)" />
-      <circle cx="86" cy="100" r="10" fill="url(#paint40_radial_5_60)" />
-      <circle cx="86" cy="100" r="10" fill="url(#paint41_radial_5_60)" />
-      <circle cx="86" cy="100" r="10" fill="url(#paint42_radial_5_60)" />
-      <circle cx="86" cy="100" r="5" fill="url(#paint43_radial_5_60)" />
-      <circle cx="86" cy="100" r="5" fill="url(#paint44_radial_5_60)" />
-      <circle cx="86" cy="100" r="5" fill="url(#paint45_radial_5_60)" />
-      <circle cx="137" cy="98" r="10" fill="url(#paint46_radial_5_60)" />
-      <circle cx="137" cy="98" r="10" fill="url(#paint47_radial_5_60)" />
-      <circle cx="137" cy="98" r="10" fill="url(#paint48_radial_5_60)" />
-      <circle cx="137" cy="98" r="5" fill="url(#paint49_radial_5_60)" />
-      <circle cx="137" cy="98" r="5" fill="url(#paint50_radial_5_60)" />
-      <circle cx="137" cy="98" r="5" fill="url(#paint51_radial_5_60)" />
+      <g filter="url(#filter7_d_5_60)">
+        <circle cx="35" cy="42" r="10" fill="url(#paint16_radial_5_60)" />
+        <circle cx="35" cy="42" r="10" fill="url(#paint17_radial_5_60)" />
+        <circle cx="35" cy="42" r="10" fill="url(#paint18_radial_5_60)" />
+        <circle cx="35" cy="42" r="5" fill="url(#paint19_radial_5_60)" />
+        <circle cx="35" cy="42" r="5" fill="url(#paint20_radial_5_60)" />
+        <circle cx="35" cy="42" r="5" fill="url(#paint21_radial_5_60)" />
+      </g>
+      <g filter="url(#filter8_d_5_60)">
+        <circle cx="86" cy="44" r="10" fill="url(#paint22_radial_5_60)" />
+        <circle cx="86" cy="44" r="10" fill="url(#paint23_radial_5_60)" />
+        <circle cx="86" cy="44" r="10" fill="url(#paint24_radial_5_60)" />
+        <circle cx="86" cy="44" r="5" fill="url(#paint25_radial_5_60)" />
+        <circle cx="86" cy="44" r="5" fill="url(#paint26_radial_5_60)" />
+        <circle cx="86" cy="44" r="5" fill="url(#paint27_radial_5_60)" />
+      </g>
+      <g filter="url(#filter9_d_5_60)">
+        <circle cx="137" cy="47" r="10" fill="url(#paint28_radial_5_60)" />
+        <circle cx="137" cy="47" r="10" fill="url(#paint29_radial_5_60)" />
+        <circle cx="137" cy="47" r="10" fill="url(#paint30_radial_5_60)" />
+        <circle cx="137" cy="47" r="5" fill="url(#paint31_radial_5_60)" />
+        <circle cx="137" cy="47" r="5" fill="url(#paint32_radial_5_60)" />
+        <circle cx="137" cy="47" r="5" fill="url(#paint33_radial_5_60)" />
+      </g>
+      <g filter="url(#filter10_d_5_60)">
+        <circle cx="35" cy="103" r="10" fill="url(#paint34_radial_5_60)" />
+        <circle cx="35" cy="103" r="10" fill="url(#paint35_radial_5_60)" />
+        <circle cx="35" cy="103" r="10" fill="url(#paint36_radial_5_60)" />
+        <circle cx="35" cy="103" r="5" fill="url(#paint37_radial_5_60)" />
+        <circle cx="35" cy="103" r="5" fill="url(#paint38_radial_5_60)" />
+        <circle cx="35" cy="103" r="5" fill="url(#paint39_radial_5_60)" />
+      </g>
+      <g filter="url(#filter11_d_5_60)">
+        <circle cx="86" cy="100" r="10" fill="url(#paint40_radial_5_60)" />
+        <circle cx="86" cy="100" r="10" fill="url(#paint41_radial_5_60)" />
+        <circle cx="86" cy="100" r="10" fill="url(#paint42_radial_5_60)" />
+        <circle cx="86" cy="100" r="5" fill="url(#paint43_radial_5_60)" />
+        <circle cx="86" cy="100" r="5" fill="url(#paint44_radial_5_60)" />
+        <circle cx="86" cy="100" r="5" fill="url(#paint45_radial_5_60)" />
+      </g>
+      <g filter="url(#filter12_d_5_60)">
+        <circle cx="137" cy="98" r="10" fill="url(#paint46_radial_5_60)" />
+        <circle cx="137" cy="98" r="10" fill="url(#paint47_radial_5_60)" />
+        <circle cx="137" cy="98" r="10" fill="url(#paint48_radial_5_60)" />
+        <circle cx="137" cy="98" r="5" fill="url(#paint49_radial_5_60)" />
+        <circle cx="137" cy="98" r="5" fill="url(#paint50_radial_5_60)" />
+        <circle cx="137" cy="98" r="5" fill="url(#paint51_radial_5_60)" />
+      </g>
       <defs>
         <filter id="filter0_i_5_60" x="0" y="20.0432" width="207" height="104.192"
           filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -102,6 +126,150 @@ defineProps({
           <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
           <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.73 0" />
           <feBlend mode="normal" in2="shape" result="effect1_innerShadow_5_60" />
+        </filter>
+        <filter id="filter1_d_5_60" x="33.8014" y="32.3288" width="169.803" height="37.3635"
+          filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix in="SourceAlpha" type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+          <feOffset dy="2" />
+          <feGaussianBlur stdDeviation="1" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.43 0" />
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5_60" />
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5_60" result="shape" />
+        </filter>
+        <filter id="filter2_d_5_60" x="34.907" y="75.8209" width="168.763" height="40.8729"
+          filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix in="SourceAlpha" type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+          <feOffset dy="2" />
+          <feGaussianBlur stdDeviation="1" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.43 0" />
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5_60" />
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5_60" result="shape" />
+        </filter>
+        <filter id="filter3_d_5_60" x="85.9581" y="89.9151" width="117.675" height="23.1835"
+          filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix in="SourceAlpha" type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+          <feOffset dy="2" />
+          <feGaussianBlur stdDeviation="1" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.43 0" />
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5_60" />
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5_60" result="shape" />
+        </filter>
+        <filter id="filter4_d_5_60" x="134.477" y="37.5003" width="69.5458" height="7.49948"
+          filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix in="SourceAlpha" type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+          <feOffset dy="2" />
+          <feGaussianBlur stdDeviation="1" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.43 0" />
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5_60" />
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5_60" result="shape" />
+        </filter>
+        <filter id="filter5_d_5_60" x="81.9555" y="37.6011" width="122.189" height="19.2872"
+          filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix in="SourceAlpha" type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+          <feOffset dy="2" />
+          <feGaussianBlur stdDeviation="1" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.43 0" />
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5_60" />
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5_60" result="shape" />
+        </filter>
+        <filter id="filter6_d_5_60" x="135.961" y="101.951" width="67.5778" height="9.59726"
+          filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix in="SourceAlpha" type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+          <feOffset dy="2" />
+          <feGaussianBlur stdDeviation="1" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.43 0" />
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5_60" />
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5_60" result="shape" />
+        </filter>
+        <filter id="filter7_d_5_60" x="24" y="31" width="28" height="28" filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix in="SourceAlpha" type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+          <feOffset dx="3" dy="3" />
+          <feGaussianBlur stdDeviation="2" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0" />
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5_60" />
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5_60" result="shape" />
+        </filter>
+        <filter id="filter8_d_5_60" x="75" y="33" width="28" height="28" filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix in="SourceAlpha" type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+          <feOffset dx="3" dy="3" />
+          <feGaussianBlur stdDeviation="2" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0" />
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5_60" />
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5_60" result="shape" />
+        </filter>
+        <filter id="filter9_d_5_60" x="126" y="36" width="28" height="28" filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix in="SourceAlpha" type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+          <feOffset dx="3" dy="3" />
+          <feGaussianBlur stdDeviation="2" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0" />
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5_60" />
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5_60" result="shape" />
+        </filter>
+        <filter id="filter10_d_5_60" x="24" y="92" width="28" height="28" filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix in="SourceAlpha" type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+          <feOffset dx="3" dy="3" />
+          <feGaussianBlur stdDeviation="2" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0" />
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5_60" />
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5_60" result="shape" />
+        </filter>
+        <filter id="filter11_d_5_60" x="75" y="89" width="28" height="28" filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix in="SourceAlpha" type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+          <feOffset dx="3" dy="3" />
+          <feGaussianBlur stdDeviation="2" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0" />
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5_60" />
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5_60" result="shape" />
+        </filter>
+        <filter id="filter12_d_5_60" x="126" y="87" width="28" height="28" filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix in="SourceAlpha" type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+          <feOffset dx="3" dy="3" />
+          <feGaussianBlur stdDeviation="2" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0" />
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5_60" />
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5_60" result="shape" />
         </filter>
         <radialGradient id="paint0_radial_5_60" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
           gradientTransform="translate(28 9.17664) rotate(9.86904) scale(23.853 49.8217)">
@@ -174,9 +342,9 @@ defineProps({
           <stop offset="1" stop-color="#663714" />
         </radialGradient>
         <radialGradient id="paint14_radial_5_60" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-          gradientTransform="translate(194 67.5) rotate(90) scale(62 109.775)">
-          <stop stop-color="#E6E6E6" />
-          <stop offset="1" stop-color="#A8A8A8" stop-opacity="0.81" />
+          gradientTransform="translate(194 66.6479) rotate(90) scale(66.3662 109.775)">
+          <stop stop-color="#F4F4F4" />
+          <stop offset="1" stop-color="#CBCBCB" />
         </radialGradient>
         <radialGradient id="paint15_radial_5_60" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
           gradientTransform="translate(99.25 72.3305) rotate(90) scale(52.3305 165.867)">
@@ -366,6 +534,7 @@ defineProps({
       </defs>
     </svg>
       
+      
 
     <div 
       class="dot" 
@@ -377,10 +546,10 @@ defineProps({
     <div class="fret" v-for="fret in frets" :style="{ left: `${fret.position * 10 - 2}px` }"></div>
 
     <div class="strings" :style="{ width: `${scaleLength * 10 + 84}px` }">
-      <div class="string string-6" style="top: 9px; height: 2px;"></div>
-      <div class="string string-5" style="top: 21px; height: 1.8px;"></div>
-      <div class="string string-4" style="top: 33px; height: 1.6px;"></div>
-      <div class="string string-3" style="top: 46.5px; height: 1.4px;"></div>
+      <div class="string string-6" style="top: 8px; height: 2px;"></div>
+      <div class="string string-5" style="top: 20px; height: 1.8px;"></div>
+      <div class="string string-4" style="top: 33.1px; height: 1.6px;"></div>
+      <div class="string string-3" style="top: 45px; height: 1.4px;"></div>
       <div class="string string-2" style="top: 59px; height: 1.2px;"></div>
       <div class="string string-1" style="top: 71px; height: 1px;"></div>
     </div>
@@ -487,7 +656,7 @@ defineProps({
 
 .guitar-fretboard .dot {
   position: absolute;
-  top: calc(100% / 2 - 5px);
+  top: calc(100% / 2 - 4px);
   width: 8px;
   height: 8px;
   left: 0;
@@ -496,12 +665,12 @@ defineProps({
 }
 
 .guitar-fretboard .dot.double {
-  top: calc(100% / 2 + 8px);
+  top: calc(100% / 2 + 9.7px);
 }
 
 .guitar-fretboard .dot.double::before {
   position: absolute;
-  top: calc(100% / 2 - 28px);
+  top: calc(100% / 2 - 30.5px);
   width: 8px;
   height: 8px;
   left: 0;
@@ -538,10 +707,11 @@ defineProps({
   width: 100%;
   position: absolute;
   left: 0;
-  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAKCAYAAADy491MAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAABTJJREFUeJw9U/1LYmkY9e+cZYiJIYahECkkxJDWTVpdEVfX1RUlkkJJamPcigxz/SAzrNQyr+XnVbt+NLn7w8KysGfP+86wP1zej+c8z3vOeZ6rm05edrWhFv78ebY/Hk+izUZzazqZRv+Y/REcDrWfZrOZefY6+2E4ePYT++N4NA51Wu1fuH7b63R/biiN7yfjyXcv05do86l5OBmPo2pPjfe6an46nmYG/UFW7aq/jrTRb912J9dqtsLEnAwHw+ygP9x5/fya1YbPteehtsd389rz6GakjY+4Pmra6IUcqoz1iH2dTl/y49HkSdPGD5PxtDAYDJ90ykMdyoOCh/sHlG/KaCgK+mof3U4XareHTquDRl2R+0elgVr1Hu1mi/gari6LqNceQOKo3pah1OpoPj5xX5H5Ld4Xcnni23geDOVZ3JO8xNIAkDxuS9fMY6zdQZ08KBg0i+cuOrzrqyqelEdQGPEa32uRVxutZhO6i2xeJtApnCdTUEi231NxXSxJsPas4apwCboqE4rc976Kuy5eSUHl61ucJI6QTqVQLVdwc1XCHVe100Pl5hZ3lTvW7KNJEiIucus0QOAGJHdTLCJ9lkKHQmvVO+QzWTQbj3gkl8TBIe6ZXyndoJC/oAEdaVCZdR9ZTyfcE+oFSKhtNztfCw9IQOXjVUlS4Gp3NUledCuVPOP5HtdX18icp2WuKJ5OnUvHBRkhStQQRgijhKMcJSlc1BOdKJduWVOVRtXZFY4GOI7IpzOchifej2RXejSDI0ZDKlA4JQN1iMvcJXS3VJY4/ISz0yTEPnl0guTxsWzrKffCAeH6OR06PT6RRLLnGWyFQojHYtK5g3gc+WwOYhwP9+JfHKQpGYoRbolO5Cjy7raKyWiMJIWJERJiKjRgRIFDGlbI5CR2MppAuf8SH1GYUvsyFfzvUCpcSYNF/eJFEbrYzi4O9w/gdXmwH9uja8cI+vyIRnawy0/EI1tb2A6FsR0OY58EfR4PfF4vtoIhHPAsVj/P8WiMqw9+j1fe72xts64Lu1wFJuQPSEMO4/s4pmkpGiJwQvTZ8SnvEkifnuGCQhIHn1CgWec0VtTNptI0JidNTXPURdczNFInCvjcbmzaNhEj4XAggCAfEgICJOPYtMPtdMK2vg6P0yXFeUgqSJy439zY4GeDy+GAzWqlOC82iDUalhl3Yc1kworBALfDCZfdAbPRKLEBCl5bXYWXb0dojIW4KM2K70Yl7oAiP8UPJAdxL4wMB4JInpxijxiPy43jRAK6kD/IB62w2+xyNSzp+YAT62sWLH74APvmJozLy/jwfkES37RuYOnjIpwkYbeJ2Aocdjvzloj/CBdFCeIix8FcgTetGCXeSWIiJroXYkeEGZJgJCrJiX04GEaE3Y6wawFfgB10y47HY3EEPD7JbWc7Iuu4HS7ohPMr+mWY6IzVso53c3NyFQKWFhdhpjMW7pf1BjjZjVWSMa+aZFzsV1dWpNCF+fcw6PVSkIlxK+Nzb95gfu6d7KJhcUma4KBRTtlVF2LbO7B9fStMQaJrZpMZRxyfhfl51jIi6PX/b6qYkHdv59g1D8X6MffNW+iYkKGjKgE9rmU+MqGzCkl0SHRqMa+1DHpDWxBj2zQ62XM5XP9y1v8i+YZlbe2fdYtlSry2TjLWdWufn+awO/62WTf+5DfifsJaZQqum4yr/Q2Ltci6JQp7Yt0LjmCd54Z+cSnrcXnuua+sGJaLPq9vTMF5du53vl1jPM6cDGtWF94vRNmBy/8AY9y6NqsPeSkAAAAASUVORK5CYII=');
-  background-size: 100% 10px;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAKCAYAAADy491MAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAABOZJREFUeJw9U/1PYkcU5c/eblg3mhWCEIMEApSwlEBBKIEaqVaSJbIUKkYssAgrYkFAvr+faJomPT133PaHydx358y955w7T7d52oTWq/XH5+eXuKY9HU5Gkx+YO3x5efGsVmsHd/3L84tltVy7mLdpmuadTaffc9+Zz+bO0XBketKePmw2m8PJeHL0pGmHi/kiNp8vchtt83m5XGb5/bO21n6ZT2e/TSfTj8T8ulqussvl6sfn5+cs+9e4fmL93Hqt/UHsCfc7rhk5fOFZh9gFe+TIscl8/UnbXDDX1A0HAwwHQwweB+i0OxgNh1guliA5LOZzzKYzjHgu8Xg4Qr/3CJIgvo/7uyYG/QFIHL2HDoYqHjPuqvtT5hu1usKvlyv1LXmSV1iJSQ4PrZaqQYGKBwWDYvj92n+5WLD3GBSm8JPxlPkp606gu72pqwt0CuViSYlZ8rvVbCnwer3GfeNOYeRCk/F/4lrNeyWo03rAZf4ClVIJvU4X7fuW2hfEddsP6HV7rLnEhCRUnnfFAMEJuXazicp1CTMK7fd6qFdvMBmNMSaXfCaLR97vttpo1G/Ze6YM6rCuiNKJclkCErXTyexb4SUJLFRzISmYfq+vyItLpeK1yreIrZYr6q4Ur5TKynEhI6KkhhghRomj4qIIl3oyCRE/FwyNkmnyaYBPBfVKla9hzLym+klfmUq33cVQvZIV7mp30D1QWT6bw/VVERIXLy5RLBTUWK8YiwPiepkOXRUuFZGbchVH8TjSqZRyLpNOo35TgzzH7Kf0q4MkWKUYcUsmUaPI3kOPBDUUKUyekIjp0gCNAlc0rFGtKSz/KQwfX881Chv2X18F/zu0GvfKYKnfvG1Clzo5RfY8g5A/iPPUJ7pWQCwcwVnyBKdccp48OsJxPIHjRALnJBgOBhEOhXAUiyPDb9kj/E6fpbiHEQmGVP7k6Jh1/TjlLph4JKoMyabPUaBpJRoiOBF9XbhiLo/K1TVuKSSfyaFBs8o0VurelCo0pqZMrfCpy9SrNFInBcKBADxuD1IknIhGEWMjERAlGa/Hi4DPB7fDgaDPr8QFSSpGnOQ9LheXG36vF26nk+JCcBFrMe3x3A+b1QqzyYSA16cwBxaL2qMUbNvfR4i9kzTGTtwZzUqfnqnzDEXm0hnFQfJiZCIaQ/HyCp+ICfoDKOTz0MUjMTZ0wuv2qt1kMLKADw6bHbs7OxTggWVvDzvvtxVxj9MFw4dd+NjE65YzM7yMTQYD8R/gpyghLnfkruCtZovCy5IzmV6cExEzFMHkmSIncSKWQJLTTnJq0XCUEwyoiadTaUSDYcXt5Dip6gS8fujEebNxD1Y647Q78E6vV7sIMOzu4oDO2BnvGU3wcRr7JHOwb1XnEu+bzUro9tZ7mIxGJcjKcyfP9W/eYEv/Tk3RtGtQJohRPs+rkNTxCdzfeiUoSKZ2YD3ABZ/P9tYWa1kQC0X+N1VeyLu3ek4tSLER6L97Cx0vfKajXQI63MtsMqGztyTRJtGp/cD2p8loagkxjm1IFzt+r/8fvvVnkm/Ybba/HXb7lPihg2ScDmePa8ip/OV2utZcI8YT1ipT8FerZb/nsjsvWbdIYU3W/Z1P8Cu/G8ZdQzboD94wrphNe5fhUHhMwTn2zLB3jecx3vnMml+2328fcgKFfwHJXBiZWMDY7gAAAABJRU5ErkJggg==');
+  background-size: 10px 100%;
   z-index: 100;
   box-shadow: inset 0px 0px 1px rgba(0, 0, 0, .8);
+  filter: drop-shadow(0 2px 1px rgba(0, 0, 0, .7));
 }
 
 
