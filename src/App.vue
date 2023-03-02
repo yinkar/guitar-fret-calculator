@@ -10,6 +10,12 @@ const precision = ref(2);
 const fretLengthRate = 17.817;
 const inchesRate = 2.54;
 
+const minNumberOfFrets = 1;
+const maxNumberOfFrets = 40;
+
+const minScaleLength = 32;
+const maxScaleLength = 200;
+
 const Units = {
   Centimeters: 0,
   Inches: 1,
@@ -66,7 +72,7 @@ onMounted(() => {
       <div class="panel-row">
         <div>
           <label for="scale-length">Scale Lenght</label>
-          <input name="scale-length" type="number" min="1" max="200" @input="fretCountEvent" v-model="scaleLength">
+          <input name="scale-length" type="number" :min="minScaleLength" :max="maxScaleLength" @input="fretCountEvent" v-model="scaleLength">
         </div>
 
         <div class="unit-selector">
@@ -81,7 +87,7 @@ onMounted(() => {
       <div class="panel-row">
         <div>
           <label for="number-of-frets">Number of Frets</label>
-          <input name="number-of-frets" type="number" min="1" max="40" @input="fretCountEvent" v-model="numberOfFrets">
+          <input name="number-of-frets" type="number" :min="minNumberOfFrets" :max="maxNumberOfFrets" @input="fretCountEvent" v-model="numberOfFrets">
         </div>
         
         <div>

@@ -39,6 +39,7 @@ defineProps({
   transform-origin: center right;
   transform: translate(-68px, -3px) rotate(-10deg);
   white-space: nowrap;
+  z-index: 200;
 }
 
 .line {
