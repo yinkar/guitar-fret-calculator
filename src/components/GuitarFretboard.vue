@@ -292,12 +292,12 @@ defineProps({
     <div class="fret" v-for="fret in frets" :style="{ left: `${fret.position * 10 - 2}px` }"></div>
 
     <div class="strings" :style="{ width: `${scaleLength * 10 + 84}px` }">
-      <div class="string string-6" style="top: 6px; height: 2px;"></div>
-      <div class="string string-5" style="top: 18px; height: 1.8px;"></div>
-      <div class="string string-4" style="top: 30px; height: 1.6px;"></div>
-      <div class="string string-3" style="top: 43px; height: 1.4px;"></div>
-      <div class="string string-2" style="top: 56px; height: 1.2px;"></div>
-      <div class="string string-1" style="top: 68px; height: 1px;"></div>
+      <div class="string string-6" style="top: 9px; height: 2px;"></div>
+      <div class="string string-5" style="top: 21px; height: 1.8px;"></div>
+      <div class="string string-4" style="top: 32px; height: 1.6px;"></div>
+      <div class="string string-3" style="top: 47px; height: 1.4px;"></div>
+      <div class="string string-2" style="top: 59px; height: 1.2px;"></div>
+      <div class="string string-1" style="top: 71px; height: 1px;"></div>
     </div>
 
     <svg class="guitar-body" :style="{ left: `${scaleLength * 10 - 270}px` }" width="489" height="359" viewBox="0 0 489 359" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -351,6 +351,8 @@ defineProps({
     </svg>
 
     <div class="hole" :style="{ left: `${scaleLength * 10 - 170}px` }"></div>
+
+    <div class="shadow"></div>
   </div>
 </template>
 
@@ -360,6 +362,8 @@ defineProps({
   position: relative;
   margin: 0 auto; 
   box-sizing: border-box;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, .3);
+  filter: drop-shadow(0 14px 10px rgba(0, 0, 0, .3));
 }
 
 .guitar-fretboard .background {
@@ -374,6 +378,15 @@ defineProps({
   top: 0;
   width: calc(100% - 100px);
   height: 100%;
+  filter: drop-shadow(0 5px 2px rgba(0, 0, 0, .4));
+}
+
+.guitar-head {
+  position: absolute;
+  left: -201px;
+  top: -31px;
+  z-index: -200;
+  filter: drop-shadow(0 5px 7px rgba(0, 0, 0, .3));
 }
 
 .guitar-fretboard .fret {
@@ -428,6 +441,7 @@ defineProps({
   box-sizing: border-box;
   z-index: -100;
   transform: scale(1.16);
+  filter: drop-shadow(0 10px 7px rgba(0, 0, 0, .3));
 }
 
 .strings {
@@ -442,10 +456,15 @@ defineProps({
   z-index: 100;
 }
 
-.guitar-head {
+
+.guitar-fretboard .shadow {
+  box-sizing: border-box;
   position: absolute;
-  left: -201px;
-  top: -34px;
-  z-index: -200;
+  left: 0;
+  top: 0;
+  width: calc(100% - 100px);
+  height: 100%;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, .3);
+  z-index: -300;
 }
 </style>
