@@ -1,6 +1,4 @@
 <script setup>
-import { defineProps } from 'vue';
-
 defineProps({
   frets: Array,
   precision: Number,
@@ -28,7 +26,7 @@ defineProps({
   display: flex;
   font-size: .6rem;
   position: relative;
-  margin: 0 300px;
+  margin: 0 280px;
 }
 
 .label-container {

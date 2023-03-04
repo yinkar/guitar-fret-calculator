@@ -98,7 +98,7 @@ onMounted(() => {
       
     </div>
 
-    <Result :frets="frets" :scale-length="scaleLength" :precision="precision" :is-in-inches="unit === Units.Inches" :inches-rate="inchesRate" />
+    <Result v-show="scaleLength > minScaleLength" :frets="frets" :scale-length="scaleLength" :precision="precision" :is-in-inches="unit === Units.Inches" :inches-rate="inchesRate" />
 
     <div class="icons">
       <a href="https://github.com/yinkar/guitar-fret-calculator" title="Github Repo">

@@ -1,5 +1,4 @@
 <script setup>
-import { defineProps } from 'vue';
 import GuitarHead from './GuitarHead.vue';
 import GuitarBody from './GuitarBody.vue';
 import GuitarStrings from './GuitarStrings.vue';

@@ -1,6 +1,4 @@
 <script setup>
-import { defineProps } from 'vue';
-
 defineProps({
   scaleLength: Number
 });
@@ -65,7 +63,7 @@ defineProps({
   position: absolute;
   top: -142px;
   box-sizing: border-box;
-  z-index: -100;
+  z-index: -400;
   transform: scale(1.16);
   filter: drop-shadow(0 10px 7px rgba(0, 0, 0, .3));
 }
