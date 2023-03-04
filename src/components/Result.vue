@@ -30,7 +30,7 @@ defineProps({
 
   @media only screen and (max-width: 770px) {
     .result {
-      padding: 200px 60px;
+      padding: 200px 0;
     }    
   }
 </style>
