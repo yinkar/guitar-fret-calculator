@@ -7,6 +7,7 @@ import GuitarFrets from './GuitarFrets.vue';
 defineProps({
   frets: Array,
   scaleLength: Number,
+  strings: Array,
 });
 </script>
 
@@ -14,7 +15,7 @@ defineProps({
   <div class="guitar-fretboard" :style="{ width: `${scaleLength * 10}px` }">
     <GuitarHead></GuitarHead>
     <GuitarFrets :frets="frets"></GuitarFrets>
-    <GuitarStrings :scale-length="scaleLength"></GuitarStrings>
+    <GuitarStrings :scale-length="scaleLength" :strings="strings"></GuitarStrings>
     <GuitarBody :scale-length="scaleLength"></GuitarBody>
   </div>
 </template>

@@ -8,13 +8,24 @@ defineProps({
   precision: Number,
   isInInches: Boolean,
   inchesRate: Number,
+  strings: Number,
 });
 </script>
 
 <template>
   <div class="result">
-    <GuitarFretboard :frets="frets" :scale-length="(isInInches ? (scaleLength * inchesRate) : scaleLength)" />
-    <Labels :frets="frets" :precision="precision" :scale-length="scaleLength" :is-in-inches="isInInches" :inches-rate="inchesRate" />
+    <GuitarFretboard 
+      :frets="frets" 
+      :scale-length="(isInInches ? (scaleLength * inchesRate) : scaleLength)" 
+      :strings="strings"
+    />
+    <Labels 
+      :frets="frets" 
+      :precision="precision" 
+      :scale-length="scaleLength" 
+      :is-in-inches="isInInches" 
+      :inches-rate="inchesRate"
+    />
   </div>
 </template>
 

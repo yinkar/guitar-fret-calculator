@@ -23,6 +23,33 @@ const Units = {
 
 const unit = ref(Units.Centimeters);
 
+const strings = [
+  {
+    position: 8,
+    size: 2
+  },
+  {
+    position: 20,
+    size: 1.8
+  },
+  {
+    position: 33.1,
+    size: 1.6
+  },
+  {
+    position: 45,
+    size: 1.4
+  },
+  {
+    position: 59,
+    size: 1.2
+  },
+  {
+    position: 71,
+    size: 1
+  },
+];
+
 function calcFret(stringLenght, fretAmount) {
     const fretLengths = [];
 
@@ -71,7 +98,7 @@ onMounted(() => {
 
       <div class="panel-row">
         <div>
-          <label for="scale-length">Scale Lenght</label>
+          <label for="scale-length">Scale Length</label>
           <input name="scale-length" type="number" :min="minScaleLength" :max="maxScaleLength" @input="fretCountEvent" v-model="scaleLength">
         </div>
 
@@ -98,7 +125,15 @@ onMounted(() => {
       
     </div>
 
-    <Result v-show="scaleLength > minScaleLength" :frets="frets" :scale-length="scaleLength" :precision="precision" :is-in-inches="unit === Units.Inches" :inches-rate="inchesRate" />
+    <Result
+      v-show="scaleLength >= minScaleLength" 
+      :frets="frets" 
+      :scale-length="scaleLength" 
+      :precision="precision" 
+      :is-in-inches="unit === Units.Inches" 
+      :inches-rate="inchesRate" 
+      :strings="strings"
+    />
 
     <div class="icons">
       <a href="https://github.com/yinkar/guitar-fret-calculator" title="Github Repo">
