@@ -24,7 +24,7 @@ defineProps({
 .guitar-fretboard {
   height: 80px;
   position: relative;
-  margin: 0 auto; 
+  margin: 0 300px; 
   box-sizing: border-box;
   box-shadow: 0 4px 3px rgba(0, 0, 0, .3);
   filter: drop-shadow(0 14px 10px rgba(0, 0, 0, .3));

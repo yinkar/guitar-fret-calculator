@@ -28,7 +28,7 @@ defineProps({
   display: flex;
   font-size: .6rem;
   position: relative;
-  margin: 0 auto;
+  margin: 0 300px;
 }
 
 .label-container {
