@@ -13,7 +13,7 @@ defineProps({
     <div class="label-container" v-for="(fret, index) in frets" :style="{ left: `${fret.position * 10 - fret.length * 10 / 2}px` }">
       <div v-for="line in Array(index + 1)" class="line"></div>
       <div class="label">
-        <strong>Fret {{ index + 1 }}:</strong>
+        <strong>Fret {{ index + 1 }}: </strong>
         
         {{ (fret.length / (isInInches ? inchesRate : 1)).toFixed(precision) }} {{ isInInches ? '″' : 'cm'}}
       </div>
@@ -38,6 +38,10 @@ defineProps({
   transform: translate(-68px, -3px) rotate(-10deg);
   white-space: nowrap;
   z-index: 200;
+}
+
+.label strong {
+  color: #aaa;
 }
 
 .line {

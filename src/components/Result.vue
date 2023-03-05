@@ -8,7 +8,7 @@ defineProps({
   precision: Number,
   isInInches: Boolean,
   inchesRate: Number,
-  strings: Number,
+  strings: Array,
 });
 </script>
 
