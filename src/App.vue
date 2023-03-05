@@ -99,7 +99,15 @@ onMounted(() => {
       <div class="panel-row">
         <div>
           <label for="scale-length">Scale Length</label>
-          <input name="scale-length" type="number" :min="minScaleLength" :max="maxScaleLength" @input="fretCountEvent" v-model="scaleLength">
+          <input 
+            name="scale-length" 
+            type="number" 
+            :min="(parseFloat(minScaleLength / (unit === Units.Inches ? inchesRate : 1)).toFixed(2))" 
+            :max="(parseFloat(maxScaleLength / (unit === Units.Inches ? inchesRate : 1)).toFixed(2))" 
+            :step="unit === Units.Inches ? 0.1 : 1" 
+            @input="fretCountEvent" 
+            v-model="scaleLength"
+          >
         </div>
 
         <div class="unit-selector">
@@ -126,7 +134,6 @@ onMounted(() => {
     </div>
 
     <Result
-      v-show="scaleLength >= minScaleLength" 
       :frets="frets" 
       :scale-length="scaleLength" 
       :precision="precision" 
