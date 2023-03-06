@@ -36,6 +36,7 @@ defineProps({
   left: 0;
   border-radius: 50%;
   background: radial-gradient(#fff, #ddd);
+  box-shadow: .5px .5px 1px rgba(0, 0, 0, .8);
 }
 
 .guitar-fretboard .dot.double {

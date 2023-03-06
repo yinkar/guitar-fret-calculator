@@ -13,7 +13,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="result">
+  <div class="result" :style="{ minHeight: `100px`, height: `${frets.length * 15}px` }">
     <GuitarFretboard 
       :frets="frets" 
       :scale-length="(isInInches ? (scaleLength * inchesRate) : scaleLength)" 
@@ -31,11 +31,10 @@ defineProps({
 
 <style scoped>
   .result {
-    padding: 200px 0 0 0;
+    padding: 200px 0;
     overflow-x: auto;
     overflow-y: hidden;
     max-width: 100vw;
-    height: 800px;
     position: relative;
   }
 
