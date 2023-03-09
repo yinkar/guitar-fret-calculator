@@ -65,7 +65,7 @@ defineProps({
   box-sizing: border-box;
   z-index: -400;
   transform: scale(1.16);
-  filter: drop-shadow(0 10px 7px rgba(0, 0, 0, .3));
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, .3)) drop-shadow(inset 0 10px 2px rgba(0, 0, 0, 1));
 }
 
 
