@@ -11,7 +11,9 @@ defineProps({
 <template>
   <div class="labels" :style="{ width: `${(isInInches ? (scaleLength * inchesRate) : scaleLength) * 10}px` }">
     <div class="label-container" v-for="(fret, index) in frets" :style="{ left: `${fret.position * 10 - fret.length * 10 / 2}px` }">
-      <div v-for="line in Array(index + 1)" class="line"></div>
+      <div class="line-container">
+        <div v-for="line in Array(index + 1)" class="line"></div>
+      </div>
       <div class="label">
         <strong>Fret {{ index + 1 }}: </strong>
         
@@ -48,5 +50,9 @@ defineProps({
   height: 1rem;
   width: 1px;
   background-color: #fff;
+}
+
+.line:last-child {
+    border-radius: 0 0 2px 2px;
 }
 </style>

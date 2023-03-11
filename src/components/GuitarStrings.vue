@@ -29,7 +29,7 @@ defineProps({
   background-image: url('../assets/string.png');
   background-size: 10px 100%;
   z-index: 100;
-  box-shadow: inset 0px 0px 1px rgba(0, 0, 0, .8);
+  box-shadow: inset -7px 0px 1px rgba(0, 0, 0, .8);
   filter: drop-shadow(0 2px 1px rgba(0, 0, 0, .7));
 }
 
