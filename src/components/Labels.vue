@@ -40,6 +40,7 @@ defineProps({
   transform: translate(-68px, -3px) rotate(-10deg);
   white-space: nowrap;
   z-index: 200;
+  filter: drop-shadow(3px 5px 5px rgba(0, 0, 0, 1));
 }
 
 .label strong {
@@ -50,6 +51,7 @@ defineProps({
   height: 1rem;
   width: 1px;
   background-color: #fff;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 1);
 }
 
 .line:last-child {
